@@ -1,6 +1,5 @@
 "use client";
 
-import { url } from 'inspector';
 import React, { useState, useEffect } from 'react';
 
 const HelloWorld: React.FC = () => {
