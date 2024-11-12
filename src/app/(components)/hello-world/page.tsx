@@ -8,7 +8,7 @@ const HelloWorld: React.FC = () => {
 
   // First animation: Slide text to the right and reveal the image
   useEffect(() => {
-    const slideTimer = setTimeout(() => setIsMoved(true), 100);
+    const slideTimer = setTimeout(() => setIsMoved(true), 120);
     const returnTimer = setTimeout(() => setIsReturned(true), 1000); // Trigger return animation after a delay
 
     return () => {
@@ -24,7 +24,7 @@ const HelloWorld: React.FC = () => {
         className={`absolute inset-0 bg-cover bg-center transition-opacity duration-[1500ms] ease-in-out ${isMoved ? 'opacity-100' : 'opacity-0'
           }`}
         style={{
-          backgroundImage:"url('/images/background.jpg')", // Replace with your image URL
+          backgroundImage:"url('/images/background.jpg')", // image Path
         }}
       ></div>
 
